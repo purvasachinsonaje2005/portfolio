@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<meta name="description" content="Purva Sonaje – CS & Data Science Engineer | AI, Java, Python, DevOps"/>
+<meta name="description" content="Purva Sonaje – CSE (Data Science) Graduate | Python | SQL | Data Analytics | Machine Learning"/>
 <title>Purva Sonaje | Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
@@ -180,35 +180,14 @@ nav.scrolled{padding:.7rem 3rem;background:rgba(2,6,23,0.95);}
 .stat-card:hover{border-color:var(--p2);transform:translateY(-4px);}
 .stat-num{font-size:2rem;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--p2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;}
 .stat-label{font-size:.75rem;color:var(--txt2);margin-top:.3rem;font-weight:500;}
-.info-list{display:flex;flex-direction:column;gap:.8rem;}
-.info-row{display:flex;align-items:center;gap:.8rem;font-size:.9rem;color:var(--txt2);}
-.info-icon {
-    width: 32px;
-    height: 32px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    background: transparent;
-    border: none;
-
-    color: #22d3ee;
-
-    font-size: 1.35rem;
-
-    transition: 
-        color 0.25s ease,
-        transform 0.25s ease;
-}
-
-.info-row:hover .info-icon {
-    color: #60a5fa;
-    transform: translateY(-2px);
-}
-.info-row a{color:var(--accent);text-decoration:none;}
+.info-list{display:flex;flex-direction:column;gap:0;}
+.info-row{display:flex;align-items:center;gap:1rem;min-height:58px;padding:.75rem 0;font-size:.9rem;color:var(--txt2);border-bottom:1px solid rgba(148,163,184,.12);transition:transform .25s ease;}
+.info-row:last-child{border-bottom:none;}
+.info-row:hover{transform:translateX(4px);}
+.info-icon{width:32px;height:32px;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:transparent;border:none;color:#22d3ee;font-size:1.25rem;transition:color .25s ease,transform .25s ease;}
+.info-row:hover .info-icon{color:#60a5fa;transform:translateY(-2px);}
+.info-icon .fa-github,.info-icon .fa-linkedin-in{font-size:1.5rem;}
+.info-row a{color:var(--accent);text-decoration:none;transition:color .25s ease;}
 .info-row a:hover{color:#fff;}
 
 /* ─── SKILLS ─── */
@@ -311,11 +290,11 @@ nav.scrolled{padding:.7rem 3rem;background:rgba(2,6,23,0.95);}
 
 /* ─── CONTACT ─── */
 #contact{background:linear-gradient(135deg,var(--bg),#0a0f1e);}
-.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem;align-items:start;}
+.contact-grid{display:grid;grid-template-columns:minmax(280px,720px);gap:4rem;align-items:start;}
 .contact-info{display:flex;flex-direction:column;gap:1rem;}
 .c-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.3rem;display:flex;align-items:center;gap:1rem;transition:all .3s;text-decoration:none;}
 .c-card:hover{border-color:var(--p2);transform:translateX(5px);box-shadow:0 0 20px rgba(37,99,235,.15);}
-.c-icon{width:44px;height:44px;background:rgba(37,99,235,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;}
+.c-icon{width:44px;height:44px;background:transparent;border:1px solid rgba(96,165,250,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.25rem;color:var(--accent);flex-shrink:0;}
 .c-label{font-size:.72rem;color:var(--txt2);text-transform:uppercase;letter-spacing:.08em;font-weight:500;}
 .c-val{font-size:.9rem;color:#fff;font-weight:500;margin-top:.15rem;}
 .contact-form{display:flex;flex-direction:column;gap:1rem;}
@@ -394,7 +373,11 @@ footer{
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  
+  <a href="https://drive.google.com/file/d/1nJ6PQb12d-bWDHHX4ryuCRavb6DkOKCW/view?usp=sharing"
+   target="_blank"
+   class="nav-btn">
+    Resume
+</a>
 </nav>
 
 <!-- HERO -->
@@ -414,7 +397,7 @@ footer{
         <span id="typed-text"></span>
         <span class="cursor-type"></span>
       </div>
-      <p class="hero-desc ha4">I am a CSE(Data Science) Graduate passionate about building scalable software solutions, AI-powered applications, backend systems, and intelligent automation tools.</p>
+      <p class="hero-desc ha4">CSE (Data Science) graduate with hands-on experience in Python, SQL, data analytics, machine learning, backend development, and DevOps. I build practical, data-driven solutions to real-world problems.</p>
       <div class="hero-btns ha5">
         <a href="#projects" class="btn-prim"> View Projects</a>
         <a href="#contact" class="btn-out"> Contact Me</a>
@@ -434,13 +417,13 @@ footer{
 <!-- ABOUT -->
 <section id="about" class="section">
   <div class="section-inner">
-    <div class="sec-badge reveal">👤 About Me</div>
+    <div class="sec-badge reveal"><i class="fa-regular fa-user"></i> About Me</div>
     <h2 class="sec-title reveal">Who I <span>Am</span></h2>
     <div class="about-grid">
       <div class="reveal-l">
-        <p class="about-p">I am a <strong>CSE(Data Science)</strong> student at R C Patel Institute of Technology, Shirpur, with hands-on experience in <strong>AI, Machine Learning, Java Development, DevOps, </strong> and <strong>Backend Engineering</strong>.</p>
-        <p class="about-p">Through internships at <strong>Celebal Technologies</strong> and <strong>R3 Systems India</strong>, plus multiple projects, I have developed practical solutions from educational analytics systems and route optimization platforms to intelligent chatbots and deployment automation pipelines.</p>
-        <p class="about-p">I enjoy solving real-world problems through technology and continuously learning modern software engineering practices.</p>
+        <p class="about-p">I am a <strong>CSE (Data Science) graduate</strong> from R C Patel Institute of Technology, Shirpur, with hands-on experience in <strong>Python, SQL, Data Analytics, Machine Learning</strong>, and backend development.</p>
+        <p class="about-p">Through internships at <strong>Celebal Technologies</strong> and <strong>R3 Systems India</strong>, along with academic and personal projects, I have built solutions involving educational analytics, route optimization, backend applications, AI, and deployment automation.</p>
+        <p class="about-p">I enjoy turning data and technical ideas into practical solutions while continuously strengthening my skills in <strong>Python, SQL, analytics, and machine learning</strong>.</p>
         <div class="stats-grid" style="margin-top:2rem;">
           <div class="stat-card reveal"><div class="stat-num" data-count="12">0</div><div class="stat-label">Projects Built</div></div>
           <div class="stat-card reveal"><div class="stat-num" data-count="2">0</div><div class="stat-label">Internships</div></div>
@@ -528,41 +511,43 @@ footer{
 <!-- SKILLS -->
 <section id="skills" class="section">
   <div class="section-inner">
-    <div class="sec-badge reveal">Skills</div>
+    <div class="sec-badge reveal"><i class="fa-solid fa-code"></i> Skills</div>
     <h2 class="sec-title reveal">Technical <span>Stack</span></h2>
-    <p class="sec-sub reveal">A comprehensive toolkit built through internships, projects, and continuous self-learning.</p>
+    <p class="sec-sub reveal">Technologies and tools I use to build data-driven applications, machine learning solutions, and backend systems.</p>
     <div class="skills-grid">
       <div class="skill-card reveal">
-        <div class="skill-cat"><div class="skill-icon"></div><div class="skill-cat-name">Programming</div></div>
-        <div class="skill-tags"><span class="stag">Python</span><span class="stag">Java</span><span class="stag">JavaScript</span><span class="stag">SQL</span></div>
+        <div class="skill-cat"><div class="skill-icon"><i class="fa-brands fa-python"></i></div><div class="skill-cat-name">Programming</div></div>
+        <div class="skill-tags"><span class="stag">Python</span><span class="stag">SQL</span><span class="stag">Java</span></div>
       </div>
+
       <div class="skill-card reveal">
-        <div class="skill-cat"><div class="skill-icon"></div><div class="skill-cat-name">Web & Backend</div></div>
-        <div class="skill-tags"><span class="stag">HTML/CSS</span><span class="stag">Node.js</span><span class="stag">Express.js</span><span class="stag">Django REST</span><span class="stag">REST APIs</span></div>
+        <div class="skill-cat"><div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div><div class="skill-cat-name">Data Analytics</div></div>
+        <div class="skill-tags"><span class="stag">Pandas</span><span class="stag">NumPy</span><span class="stag">Excel</span><span class="stag">Power BI</span><span class="stag">Matplotlib</span></div>
       </div>
+
       <div class="skill-card reveal">
-        <div class="skill-cat"><div class="skill-icon"></div><div class="skill-cat-name">AI & ML</div></div>
-        <div class="skill-tags"><span class="stag">Machine Learning</span><span class="stag">Generative AI</span><span class="stag">Agentic AI</span><span class="stag">NLP</span></div>
+        <div class="skill-cat"><div class="skill-icon"><i class="fa-solid fa-brain"></i></div><div class="skill-cat-name">Machine Learning</div></div>
+        <div class="skill-tags"><span class="stag">Scikit-learn</span><span class="stag">XGBoost</span><span class="stag">TensorFlow</span><span class="stag">NLP</span></div>
       </div>
+
       <div class="skill-card reveal">
-        <div class="skill-cat"><div class="skill-icon"></div><div class="skill-cat-name">DevOps & Cloud</div></div>
-        <div class="skill-tags"><span class="stag">Docker</span><span class="stag">Azure DevOps</span><span class="stag">CI/CD</span><span class="stag">IIS Deployment</span></div>
+        <div class="skill-cat"><div class="skill-icon"><i class="fa-solid fa-server"></i></div><div class="skill-cat-name">Backend & APIs</div></div>
+        <div class="skill-tags"><span class="stag">Django</span><span class="stag">REST APIs</span><span class="stag">Spring MVC</span><span class="stag">JDBC</span></div>
       </div>
+
       <div class="skill-card reveal">
-        <div class="skill-cat"><div class="skill-icon"></div><div class="skill-cat-name">Databases</div></div>
-        <div class="skill-tags"><span class="stag">MongoDB</span><span class="stag">MySQL</span></div>
+        <div class="skill-cat"><div class="skill-icon"><i class="fa-solid fa-database"></i></div><div class="skill-cat-name">Databases</div></div>
+        <div class="skill-tags"><span class="stag">MySQL</span><span class="stag">MongoDB</span></div>
       </div>
+
       <div class="skill-card reveal">
-        <div class="skill-cat"><div class="skill-icon"></div><div class="skill-cat-name">Analytics</div></div>
-        <div class="skill-tags"><span class="stag">Power BI</span><span class="stag">Tableau</span></div>
+        <div class="skill-cat"><div class="skill-icon"><i class="fa-brands fa-docker"></i></div><div class="skill-cat-name">Tools & DevOps</div></div>
+        <div class="skill-tags"><span class="stag">Git</span><span class="stag">GitHub</span><span class="stag">Docker</span><span class="stag">Azure DevOps</span><span class="stag">CI/CD</span></div>
       </div>
+
       <div class="skill-card reveal">
-        <div class="skill-cat"><div class="skill-icon"></div><div class="skill-cat-name">Tools</div></div>
-        <div class="skill-tags"><span class="stag">Git</span><span class="stag">GitHub</span><span class="stag">Docker</span><span class="stag">XAMPP</span><span class="stag">Eclipse</span><span class="stag">VS Code</span></div>
-      </div>
-      <div class="skill-card reveal">
-        <div class="skill-cat"><div class="skill-icon"></div><div class="skill-cat-name">Soft Skills</div></div>
-        <div class="skill-tags"><span class="stag">Leadership</span><span class="stag">Problem Solving</span><span class="stag">Communication</span><span class="stag">Quick Learner</span></div>
+        <div class="skill-cat"><div class="skill-icon"><i class="fa-solid fa-globe"></i></div><div class="skill-cat-name">Web Development</div></div>
+        <div class="skill-tags"><span class="stag">HTML/CSS</span><span class="stag">JavaScript</span><span class="stag">Node.js</span><span class="stag">Express.js</span></div>
       </div>
     </div>
   </div>
@@ -571,7 +556,7 @@ footer{
 <!-- EXPERIENCE -->
 <section id="experience" class="section">
   <div class="section-inner">
-    <div class="sec-badge reveal">Experience</div>
+    <div class="sec-badge reveal"><i class="fa-solid fa-briefcase"></i> Experience</div>
     <h2 class="sec-title reveal">Work <span>History</span></h2>
     <p class="sec-sub reveal">Hands-on internship experience across DevOps automation and Java backend development.</p>
     <div class="exp-timeline">
@@ -635,9 +620,9 @@ footer{
 <!-- PROJECTS -->
 <section id="projects" class="section">
   <div class="section-inner">
-    <div class="sec-badge reveal"> Projects</div>
+    <div class="sec-badge reveal"><i class="fa-solid fa-folder-open"></i> Projects</div>
     <h2 class="sec-title reveal">Things I've <span>Built</span></h2>
-    <p class="sec-sub reveal">A selection of projects spanning ML, backend engineering, DevOps, and AI.</p>
+    <p class="sec-sub reveal">A selection of projects in data analytics, machine learning, backend development, and AI.</p>
     <div class="projects-grid">
 
       <!-- PROJECT 01 -->
@@ -662,7 +647,7 @@ footer{
           <div class="proj-feat">
             <span class="pfeat">Route Optimization</span>
             <span class="pfeat">Fuel Cost Prediction</span>
-            <span class="pfeat">Real-Time APIs</span>
+            <span class="pfeat">Routing API Integration</span>
             <span class="pfeat">Vehicle Range Analysis</span>
           </div>
           <div class="proj-tech">
@@ -889,16 +874,15 @@ footer{
     </div>
 
     <div class="proj-desc">
-      An AI-powered leukemia detection system that analyzes blood cell images
-      and classifies leukemia types using deep learning models. The platform
-      provides automated prediction, medical image analysis, and interactive
-      visualization through a user-friendly dashboard.
+      A deep-learning based blood-smear image classification system that analyzes
+      cell images for leukemia-related patterns and presents prediction results
+      through an interactive Streamlit dashboard.
     </div>
 
     <div class="proj-feat">
       <span class="pfeat">Medical Imaging</span>
       <span class="pfeat">Deep Learning</span>
-      <span class="pfeat">Cancer Detection</span>
+      <span class="pfeat">Cell Image Classification</span>
       <span class="pfeat">Interactive Dashboard</span>
     </div>
 
@@ -979,14 +963,14 @@ footer{
 <!-- ACHIEVEMENTS -->
 <section id="achievements" class="section">
   <div class="section-inner">
-    <div class="sec-badge reveal">Achievements</div>
+    <div class="sec-badge reveal"><i class="fa-solid fa-award"></i> Achievements</div>
     <h2 class="sec-title reveal">Awards & <span>Recognition</span></h2>
     <p class="sec-sub reveal">Milestones earned through competition, dedication, and innovation.</p>
     <div class="ach-grid">
       
-      <div class="ach-card reveal"><div class="ach-icon">🏅</div><div class="ach-text"><h4>Ranked 1st — Class X</h4><p>Secured 1st position at examination center in Maharashtra Board Class X</p></div></div>
-      <div class="ach-card reveal"><div class="ach-icon">🇮🇳</div><div class="ach-text"><h4>Smart India Hackathon</h4><p>Finalist in SIH at institute level — one of India's largest national hackathons</p></div></div>
-      <div class="ach-card reveal"><div class="ach-icon">⚡</div><div class="ach-text"><h4>CodeCraze 24Hr Hackathon</h4><p>Built a Mental Health Tracking Chatbot in 24 hours using Python and NLP</p></div></div>
+      <div class="ach-card reveal"><div class="ach-icon"><i class="fa-solid fa-medal"></i></div><div class="ach-text"><h4>Ranked 1st — Class X</h4><p>Secured 1st position at examination center in Maharashtra Board Class X</p></div></div>
+      <div class="ach-card reveal"><div class="ach-icon"><i class="fa-solid fa-trophy"></i></div><div class="ach-text"><h4>Smart India Hackathon</h4><p>Finalist in SIH at institute level — one of India's largest national hackathons</p></div></div>
+      <div class="ach-card reveal"><div class="ach-icon"><i class="fa-solid fa-bolt"></i></div><div class="ach-text"><h4>CodeCraze 24Hr Hackathon</h4><p>Built a Mental Health Tracking Chatbot in 24 hours using Python and NLP</p></div></div>
       
   </div>
 </section>
@@ -994,7 +978,7 @@ footer{
 <!-- EDUCATION -->
 <section id="education" class="section">
   <div class="section-inner">
-    <div class="sec-badge reveal">Education</div>
+    <div class="sec-badge reveal"><i class="fa-solid fa-graduation-cap"></i> Education</div>
     <h2 class="sec-title reveal">Academic <span>Journey</span></h2>
     <p class="sec-sub reveal">Strong academic foundation in Computer Science with a specialization in Data Science.</p>
     <div class="edu-grid">
@@ -1017,42 +1001,49 @@ footer{
 <!-- CONTACT -->
 <section id="contact" class="section">
   <div class="section-inner">
-    <div class="sec-badge reveal">📬 Contact</div>
+    <div class="sec-badge reveal"><i class="fa-regular fa-envelope"></i> Contact</div>
     <h2 class="sec-title reveal">Get In <span>Touch</span></h2>
-    <p class="sec-sub reveal">Open to full-time roles, internships, freelance projects, and collaborations.</p>
+    <p class="sec-sub reveal">Open to full-time Data Analyst, Python Developer, Data Science, and software development opportunities.</p>
     <div class="contact-grid">
       <div class="contact-info reveal-l">
-        <a href="mailto:purvasonaje@gmail.com" class="c-card">
-          <div class="c-icon">✉</div>
-          <div><div class="c-label">Email</div><div class="c-val">purvasonaje@gmail.com</div></div>
+        <a href="mailto:purvasonaje.arcade@gmail.com" class="c-card">
+          <div class="c-icon"><i class="fa-regular fa-envelope"></i></div>
+          <div><div class="c-label">Email</div><div class="c-val">purvasonaje.arcade@gmail.com</div></div>
         </a>
-        <a href="https://www.linkedin.com/in/purva-sonaje-ab4052288" class="c-card">
-          <div class="c-icon">💼</div>
-          <div><div class="c-label">LinkedIn</div><div class="c-val">https://www.linkedin.com/in/purva-sonaje-ab4052288</div></div>
+        <a href="https://www.linkedin.com/in/purva-sonaje-ab4052288" target="_blank" rel="noopener noreferrer" class="c-card">
+          <div class="c-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div><div class="c-label">LinkedIn</div><div class="c-val">LinkedIn Profile</div></div>
         </a>
-        <a href="https://github.com/purvasachinsonaje2005" class="c-card">
-          <div class="c-icon">🐙</div>
-          <div><div class="c-label">GitHub</div><div class="c-val">https://github.com/purvasachinsonaje2005</div></div>
+        <a href="https://github.com/purvasachinsonaje2005" target="_blank" rel="noopener noreferrer" class="c-card">
+          <div class="c-icon"><i class="fa-brands fa-github"></i></div>
+          <div><div class="c-label">GitHub</div><div class="c-val">GitHub Profile</div></div>
         </a>
-        <a href="https://www.codechef.com/users/purvas_2005" class="c-card">
-          <div class="c-icon">⭐</div>
-          <div><div class="c-label">CodeChef</div><div class="c-val">https://www.codechef.com/users/purvas_2005</div></div>
+        <a href="https://www.codechef.com/users/purvas_2005" target="_blank" rel="noopener noreferrer" class="c-card">
+          <div class="c-icon"><i class="fa-solid fa-code"></i></div>
+          <div><div class="c-label">CodeChef</div><div class="c-val">CodeChef Profile</div></div>
+        </a>
+        <a href="tel:+919518765219" class="c-card">
+          <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+          <div><div class="c-label">Phone</div><div class="c-val">+91 9518765219</div></div>
         </a>
         <div class="c-card" style="text-decoration:none;cursor:default;">
-          <div class="c-icon">📍</div>
-          <div><div class="c-label">Location</div><div class="c-val">Thane, Maharashtra, India</div></div>
+          <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div><div class="c-label">Location</div><div class="c-val">Maharashtra, India</div></div>
         </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- FOOTER -->
+
 <footer>
   <div class="foot-left">Designed &amp; Developed by <span>Purva Sonaje</span> · © 2026 All Rights Reserved</div>
   <div class="foot-right">
     <a href="#hero">Back to Top ↑</a>
-    <a href="mailto:purvasonaje@gmail.com">Email</a>
-    <a href="#">GitHub</a>
-    <a href="#">LinkedIn</a>
+    <a href="mailto:purvasonaje.arcade@gmail.com">Email</a>
+    <a href="https://github.com/purvasachinsonaje2005" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://www.linkedin.com/in/purva-sonaje-ab4052288" target="_blank" rel="noopener noreferrer">LinkedIn</a>
   </div>
 </footer>
 
@@ -1110,7 +1101,7 @@ window.addEventListener('scroll',()=>{
 });
 
 // ─── TYPING ───
-const phrases=['Computer Science Engineer','AI Engineer','Java Developer','Python Developer','DevOps Enthusiast','ML Practitioner'];
+const phrases=['Data Analyst','Python Developer','Data Science Graduate','Machine Learning Practitioner','Backend Developer'];
 let pi=0,ci=0,del=false;
 const el=document.getElementById('typed-text');
 (function type(){
