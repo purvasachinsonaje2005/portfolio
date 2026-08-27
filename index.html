@@ -7,6 +7,10 @@
 <title>Purva Sonaje | Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
 <style>
 :root{
   --bg:#020617;
@@ -178,7 +182,32 @@ nav.scrolled{padding:.7rem 3rem;background:rgba(2,6,23,0.95);}
 .stat-label{font-size:.75rem;color:var(--txt2);margin-top:.3rem;font-weight:500;}
 .info-list{display:flex;flex-direction:column;gap:.8rem;}
 .info-row{display:flex;align-items:center;gap:.8rem;font-size:.9rem;color:var(--txt2);}
-.info-icon{width:36px;height:36px;background:rgba(37,99,235,.12);border:1px solid rgba(37,99,235,.25);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;}
+.info-icon {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: transparent;
+    border: none;
+
+    color: #22d3ee;
+
+    font-size: 1.35rem;
+
+    transition: 
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.info-row:hover .info-icon {
+    color: #60a5fa;
+    transform: translateY(-2px);
+}
 .info-row a{color:var(--accent);text-decoration:none;}
 .info-row a:hover{color:#fff;}
 
